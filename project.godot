@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="2D Cloth Simulation using Verlet Integration"
+run/main_scene="res://Scenes/mainScene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GlobalVars="*res://global_vars.gd"
