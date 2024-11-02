@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbnk4m7x7r7jq"]
+
+[ext_resource type="Script" path="res://stick.gd" id="1_vvuno"]
+
+[node name="Stick" type="Line2D"]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 2.0
+default_color = Color(0.0712314, 0.0712314, 0.0712314, 1)
+script = ExtResource("1_vvuno")
