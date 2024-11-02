@@ -1,3 +1,3 @@
 extends Node
 
-var GRAVITY = Vector2(0,98)
+var GRAVITY = Vector2(0,980)

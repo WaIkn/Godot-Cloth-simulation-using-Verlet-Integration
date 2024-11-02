@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://butpqf3fwnga1"]
+
+[ext_resource type="Script" path="res://Scritps/VerletNode.gd" id="1_x6fnl"]
+[ext_resource type="Texture2D" uid="uid://wy7poeuu4wst" path="res://glowing_circle.png" id="2_dsp42"]
+
+[node name="VerletNode2D" type="Node2D"]
+script = ExtResource("1_x6fnl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_dsp42")

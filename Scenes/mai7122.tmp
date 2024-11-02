@@ -6,12 +6,15 @@
 script = ExtResource("1_cubm7")
 
 [node name="SpawnAnchor" type="Marker2D" parent="."]
-position = Vector2(268, 228)
+position = Vector2(293, 0)
 
 [node name="TopLeft" type="Marker2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(50, 50)
 
 [node name="BottomRight" type="Marker2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(1050, 600)
+position = Vector2(1152, 648)
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,16 +1,18 @@
 extends Node2D
 
 
-var gravity = Vector2(0,98)
-var CLOTHNODE_SCENE = preload("res://Scenes/cloth_node.tscn")
+
+var VERLETNODE := preload("res://Scenes/verlet_node2D.tscn")
 
 func _ready():
+	VerletNode2D.setSimulationSpace(%TopLeft.position,%BottomRight.position)
 	createNode()
-	createNode($SpawnAnchor.position + Vector2.RIGHT*200)
+	
 	return
 	
 	
-func createNode(spawnPosition = $SpawnAnchor.position):
-	var newNode = CLOTHNODE_SCENE.instantiate()
-	newNode.position = spawnPosition
-	add_child(newNode)
+func createNode(targetPosition = $SpawnAnchor.position):
+	var node = VERLETNODE.instantiate()
+	node.position = targetPosition
+	node.NODELIST.append(node)
+	add_child(node)

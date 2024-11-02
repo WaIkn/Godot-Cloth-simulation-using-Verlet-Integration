@@ -10,8 +10,8 @@ position = Vector2(268, 228)
 
 [node name="TopLeft" type="Marker2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(50, 50)
+position = Vector2(165, 122)
 
 [node name="BottomRight" type="Marker2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(1050, 600)
+position = Vector2(488, 342)
