@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmx4jv0q7mp1h"]
+
+[ext_resource type="Script" path="res://Scritps/scene.gd" id="1_d40nx"]
+[ext_resource type="Texture2D" uid="uid://wy7poeuu4wst" path="res://glowing_circle.png" id="2_t8axn"]
+[ext_resource type="PackedScene" uid="uid://b8lq3dyakn1ep" path="res://Scenes/wind_area.tscn" id="3_2d21n"]
+[ext_resource type="Script" path="res://Scenes/h_slider.gd" id="4_qsk02"]
+
+[node name="Scene" type="Node2D"]
+script = ExtResource("1_d40nx")
+
+[node name="Anchor" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(41, 28)
+
+[node name="Marker2D" type="Sprite2D" parent="Anchor"]
+position = Vector2(0, 500)
+texture = ExtResource("2_t8axn")
+
+[node name="WindArea" parent="." instance=ExtResource("3_2d21n")]
+unique_name_in_owner = true
+
+[node name="WindSlider" type="HSlider" parent="."]
+custom_minimum_size = Vector2(100, 50)
+offset_left = 9.0
+offset_top = -13.0
+offset_right = 109.0
+offset_bottom = 37.0
+script = ExtResource("4_qsk02")
+
+[connection signal="value_changed" from="WindSlider" to="." method="_on_wind_slider_value_changed"]

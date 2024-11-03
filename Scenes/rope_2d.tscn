@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dprtcujknqn2b"]
+
+[ext_resource type="Script" path="res://Scritps/rope_2d.gd" id="1_mk5bk"]
+
+[node name="Rope2D" type="Line2D"]
+texture_filter = 2
+width = 2.0
+default_color = Color(0.0562916, 0.0562916, 0.0562916, 1)
+joint_mode = 2
+script = ExtResource("1_mk5bk")

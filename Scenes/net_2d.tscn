@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxxr26hmc2cma"]
+
+[ext_resource type="Script" path="res://Scenes/net_2d.gd" id="1_kmxij"]
+
+[node name="Net2D" type="Node2D"]
+script = ExtResource("1_kmxij")
